@@ -1,0 +1,772 @@
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:55"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:55"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:55"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:56"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:56"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:57"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:57"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:58"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:59"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:38:59"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:00"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:00"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:01"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:01"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:02"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:02"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:03"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:03"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:04"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:04"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:05"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:05"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:06"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:06"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:07"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:07"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:08"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:08"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:09"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:09"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:10"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:10"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:11"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:11"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:12"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:12"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:13"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 13:39:13"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:31"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:31"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:32"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:32"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:33"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:33"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:34"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:34"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:35"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 13:39:35"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 13:39:36"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:31"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:31"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:32"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:32"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-10 16:49:33"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 16:49:33"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 17:15:35"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 17:15:35"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 17:15:35"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 17:15:35"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 17:15:35"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 17:15:35"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 17:15:35"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 17:15:35"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-10 17:18:14"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-10 17:18:16"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-10 17:23:08"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 17:26:59"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 17:56:24"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 17:56:24"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 17:56:24"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 17:56:24"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 17:56:24"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 17:56:24"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 17:56:24"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 17:56:24"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-10 17:56:40"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 17:57:04"}
+{"level":"info","message":"Process terminated","service":"marketplace-integration","timestamp":"2026-02-10 17:58:16"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 18:00:11"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 18:00:11"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 18:00:11"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 18:00:11"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 18:00:11"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 18:00:11"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 18:00:11"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 18:00:11"}
+{"level":"info","message":"GET /api/docs - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:01:04"}
+{"level":"info","message":"GET /api/docs/ - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:01:04"}
+{"level":"info","message":"GET /api/docs/swagger-ui.css - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:01:04"}
+{"level":"info","message":"GET /api/docs/swagger-ui-bundle.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:01:04"}
+{"level":"info","message":"GET /api/docs/swagger-ui-standalone-preset.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:01:04"}
+{"level":"info","message":"GET /api/docs/swagger-ui-init.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:01:04"}
+{"level":"info","message":"GET /api/docs/favicon-32x32.png - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:01:08"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:03:36"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-10 18:03:36"}
+{"level":"info","message":"User logged in: admin@mail.com","service":"marketplace-integration","timestamp":"2026-02-10 18:03:37"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:03:39"}
+{"level":"info","message":"User logged in: admin@mail.com","service":"marketplace-integration","timestamp":"2026-02-10 18:03:39"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-10 18:04:09"}
+{"level":"info","message":"User logged in: admin@mail.com","service":"marketplace-integration","timestamp":"2026-02-10 18:04:10"}
+{"level":"info","message":"GET /marketplace-integration - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:08:36"}
+{"level":"info","message":"GET /api/docs/ - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:14:00"}
+{"level":"info","message":"GET /api/docs/swagger-ui.css - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:14:01"}
+{"level":"info","message":"GET /api/docs/swagger-ui-bundle.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:14:01"}
+{"level":"info","message":"GET /api/docs/swagger-ui-standalone-preset.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:14:01"}
+{"level":"info","message":"GET /api/docs/swagger-ui-init.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:14:01"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:14:08"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 21:36:20"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 21:36:53"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 21:36:53"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 21:36:53"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 21:36:53"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 21:36:53"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 21:36:53"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 21:36:53"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 21:36:53"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:38:18"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 21:41:12"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 21:41:29"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 21:41:29"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 21:41:29"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 21:41:29"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 21:41:29"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 21:41:29"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 21:41:29"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 21:41:29"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:41:38"}
+{"level":"info","message":"GET /api/products - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:43:00"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 21:50:57"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 21:52:02"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 21:52:02"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 21:52:02"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 21:52:02"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 21:52:02"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 21:52:02"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 21:52:02"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 21:52:02"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:52:27"}
+{"level":"info","message":"GET /api/docs/ - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:52:44"}
+{"level":"info","message":"GET /api/docs/swagger-ui.css - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:52:44"}
+{"level":"info","message":"GET /api/docs/swagger-ui-bundle.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:52:44"}
+{"level":"info","message":"GET /api/docs/swagger-ui-standalone-preset.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:52:44"}
+{"level":"info","message":"GET /api/docs/swagger-ui-init.js - ::1","service":"marketplace-integration","timestamp":"2026-02-10 21:52:44"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 22:04:25"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 22:04:26"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 22:04:26"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 22:04:26"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 22:04:26"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 22:04:26"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 22:04:26"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 22:04:26"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 22:05:15"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 22:05:15"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 22:05:15"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 22:05:15"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 22:05:15"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 22:05:15"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 22:05:15"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 22:05:15"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 22:07:20"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 22:07:31"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 22:07:31"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 22:07:31"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 22:07:31"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 22:07:31"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 22:07:31"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 22:07:31"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 22:07:31"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-10 22:08:00"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-10 22:14:28"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-10 22:14:59"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-10 22:14:59"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-10 22:14:59"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-10 22:14:59"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-10 22:14:59"}
+{"level":"info","message":"Server running on port 3000","service":"marketplace-integration","timestamp":"2026-02-10 22:14:59"}
+{"level":"info","message":"Environment: development","service":"marketplace-integration","timestamp":"2026-02-10 22:14:59"}
+{"level":"info","message":"API Documentation: http://localhost:3000/api/docs","service":"marketplace-integration","timestamp":"2026-02-10 22:14:59"}
+{"level":"info","message":"GET /api/docs/ - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:27"}
+{"level":"info","message":"GET /api/docs/swagger-ui.css - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:27"}
+{"level":"info","message":"GET /api/docs/swagger-ui-standalone-preset.js - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:27"}
+{"level":"info","message":"GET /api/docs/swagger-ui-bundle.js - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:27"}
+{"level":"info","message":"GET /api/docs/swagger-ui-init.js - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:27"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:33"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:33"}
+{"level":"info","message":"GET /api/docs/ - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:39"}
+{"level":"info","message":"GET /api/docs/swagger-ui.css - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:39"}
+{"level":"info","message":"GET /api/docs/swagger-ui-bundle.js - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:39"}
+{"level":"info","message":"GET /api/docs/swagger-ui-standalone-preset.js - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:39"}
+{"level":"info","message":"GET /api/docs/swagger-ui-init.js - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:05:39"}
+{"level":"info","message":"POST /api/auth/register - ::1","service":"marketplace-integration","timestamp":"2026-02-11 12:07:58"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-11 12:07:58"}
+{"level":"info","message":"New user registered: admin@gmail.com","service":"marketplace-integration","timestamp":"2026-02-11 12:07:59"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-11 12:09:46"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-11 16:29:21"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-11 16:29:21"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-11 16:37:29"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-11 16:40:37"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-11 16:40:37"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-11 16:40:37"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-11 16:40:37"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-11 16:40:37"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-11 16:40:47"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-11 16:41:16"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-11 16:41:16"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-11 16:41:16"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-11 16:41:16"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-11 16:41:16"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-11 16:41:31"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-11 16:41:33"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-11 16:44:06"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-11 16:46:02"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-11 16:46:02"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-11 16:46:02"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-11 16:46:02"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-11 16:46:02"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-11 16:46:37"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-11 16:50:13"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-11 16:50:59"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 09:36:02"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 09:36:02"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 09:36:02"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 09:36:02"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 09:36:02"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:36:23"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:36:26"}
+{"level":"info","message":"GET /api/docs - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:40:40"}
+{"level":"info","message":"GET /api/docs/ - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:40:41"}
+{"level":"info","message":"GET /api/docs/swagger-ui.css - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:40:41"}
+{"level":"info","message":"GET /api/docs/swagger-ui-bundle.js - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:40:41"}
+{"level":"info","message":"GET /api/docs/swagger-ui-standalone-preset.js - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:40:41"}
+{"level":"info","message":"GET /api/docs/swagger-ui-init.js - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:40:41"}
+{"level":"info","message":"GET /api/docs/favicon-32x32.png - ::1","service":"marketplace-integration","timestamp":"2026-02-12 09:40:43"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 09:49:51"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 09:49:51"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 09:49:51"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 09:49:51"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 09:49:51"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-12 09:50:20"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 09:55:02"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 09:55:02"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 09:55:02"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 09:55:02"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 09:55:02"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-12 09:55:12"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 09:55:30"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 09:55:30"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 09:55:30"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 09:55:30"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 09:55:30"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 10:04:39"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 10:04:39"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 10:04:39"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 10:04:39"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 10:04:39"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:04:53"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 10:06:32"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 10:06:32"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 10:06:32"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 10:06:32"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 10:06:32"}
+{"level":"info","message":"GET /api/docs/ - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:10:24"}
+{"level":"info","message":"GET /api/docs/swagger-ui.css - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:10:25"}
+{"level":"info","message":"GET /api/docs/swagger-ui-bundle.js - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:10:25"}
+{"level":"info","message":"GET /api/docs/swagger-ui-standalone-preset.js - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:10:25"}
+{"level":"info","message":"GET /api/docs/swagger-ui-init.js - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:10:25"}
+{"level":"info","message":"GET /api/docs/favicon-32x32.png - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:10:26"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:11:01"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 10:12:47"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 10:12:47"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 10:12:47"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 10:12:47"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 10:12:47"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 10:13:05"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 10:13:05"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 10:13:05"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 10:13:05"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 10:13:05"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:13:15"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-12 10:27:18"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 10:27:49"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 10:27:49"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 10:27:49"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 10:27:50"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 10:27:50"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:28:18"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 10:30:12"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 10:30:13"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 10:30:13"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 10:30:13"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 10:30:13"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-12 10:30:19"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-12 10:54:04"}
+{"level":"info","message":"Redis client connected","service":"marketplace-integration","timestamp":"2026-02-12 11:23:21"}
+{"level":"info","message":"Redis client ready","service":"marketplace-integration","timestamp":"2026-02-12 11:23:21"}
+{"level":"info","message":"Connected to Redis","service":"marketplace-integration","timestamp":"2026-02-12 11:23:21"}
+{"level":"info","message":"All job queues initialized successfully","service":"marketplace-integration","timestamp":"2026-02-12 11:23:21"}
+{"level":"info","message":"Job queues initialized","service":"marketplace-integration","timestamp":"2026-02-12 11:23:21"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-12 13:04:00"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-12 13:06:05"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:28"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:28"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:28"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:28"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:28"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:28"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:28"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:29"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:30"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:31"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:31"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:32"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:32"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:33"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:33"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:34"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:34"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:35"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:35"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:36"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:36"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:37"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:37"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:38"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:38"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:39"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:39"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:40"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:40"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:41"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:41"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:42"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:42"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:43"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:43"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:44"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:45"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:45"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:46"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:46"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:47"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:47"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:48"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:48"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:49"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:49"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:50"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:50"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:51"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:51"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:52"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:52"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:53"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:53"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:54"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:55"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:55"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:56"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:56"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:57"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:57"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:58"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:58"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:59"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:57:59"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:00"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:00"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:01"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:01"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:02"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:03"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:03"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:04"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:04"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:05"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:05"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:06"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:06"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:07"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:07"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:08"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:08"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:09"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:09"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:10"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:10"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:11"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:11"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:12"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:12"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:13"}
+{"code":"ECONNREFUSED","level":"error","message":"Redis Client Error:","service":"marketplace-integration","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-02-13 10:58:13"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-13 10:58:13"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-13 11:38:24"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-13 11:38:24"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-13 11:43:22"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-13 11:43:24"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-13 11:46:20"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:01:37"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:01:53"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:02:03"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-13 13:16:11"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-13 13:16:17"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-13 13:16:29"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:16:46"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:17:09"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-13 13:20:14"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-13 13:20:14"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:20:15"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:20:20"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:20:24"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-13 13:22:20"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-13 13:22:37"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-13 13:22:37"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:23:01"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:23:29"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-13 13:24:41"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-13 13:24:41"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-13 13:25:00"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-13 13:25:00"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-13 13:25:19"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-13 13:25:19"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:25:25"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-13 13:25:27"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 08:51:11"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 08:51:11"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 08:54:26"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-16 08:54:29"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-16 08:55:25"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 08:56:27"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 08:56:28"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 08:57:11"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 08:57:39"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 08:57:39"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-16 08:57:53"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-16 08:57:56"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 08:58:02"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-16 08:58:20"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-16 08:58:29"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 09:00:45"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 09:00:45"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-16 09:00:57"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-16 09:01:01"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 09:13:54"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 09:14:08"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 10:29:54"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 10:30:15"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 10:30:15"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 10:34:53"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 10:45:01"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 10:45:01"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 10:45:34"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 10:45:54"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 10:45:54"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 10:46:31"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 10:56:23"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 10:56:41"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 10:56:41"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 11:05:29"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 11:05:51"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 11:05:51"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 11:22:45"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 11:23:04"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 11:23:05"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 11:23:28"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 11:23:47"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 11:23:47"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 11:34:34"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 11:34:57"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 11:34:57"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 11:50:37"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 12:07:44"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 12:07:44"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-16 12:08:32"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 12:08:55"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 12:08:55"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 12:19:59"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 12:19:59"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 12:31:40"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 12:31:40"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 12:53:42"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 13:09:17"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 14:15:48"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 14:15:48"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 14:17:02"}
+{"level":"info","message":"Client connected: XP4cnxqzqY8GjxpOAAAB","service":"marketplace-integration","timestamp":"2026-02-16 14:17:02"}
+{"level":"info","message":"User null joined room","service":"marketplace-integration","timestamp":"2026-02-16 14:17:02"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 14:27:13"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 14:27:13"}
+{"level":"info","message":"Client connected: mf8vkfznzktot3MhAAAB","service":"marketplace-integration","timestamp":"2026-02-16 14:27:29"}
+{"level":"info","message":"User null joined room","service":"marketplace-integration","timestamp":"2026-02-16 14:27:29"}
+{"level":"info","message":"Client disconnected: mf8vkfznzktot3MhAAAB","service":"marketplace-integration","timestamp":"2026-02-16 14:39:45"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 14:55:43"}
+{"level":"info","message":"Client connected: ImI88meVeBxYI8pNAAAD","service":"marketplace-integration","timestamp":"2026-02-16 14:55:43"}
+{"level":"info","message":"User null joined room","service":"marketplace-integration","timestamp":"2026-02-16 14:55:43"}
+{"level":"info","message":"Client disconnected: ImI88meVeBxYI8pNAAAD","service":"marketplace-integration","timestamp":"2026-02-16 14:55:46"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-16 14:57:51"}
+{"level":"info","message":"Client connected: u2-JU30Tc7helv1jAAAF","service":"marketplace-integration","timestamp":"2026-02-16 14:57:51"}
+{"level":"info","message":"User null joined room","service":"marketplace-integration","timestamp":"2026-02-16 14:57:51"}
+{"level":"info","message":"Client disconnected: u2-JU30Tc7helv1jAAAF","service":"marketplace-integration","timestamp":"2026-02-16 14:57:55"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 15:15:12"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 15:15:12"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-16 15:19:04"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-16 15:19:04"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 11:50:20"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-17 11:50:20"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 11:59:07"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 11:59:21"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-17 11:59:21"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 12:02:27"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-17 12:02:29"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 12:02:43"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 12:02:53"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 12:09:02"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-17 12:09:02"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 12:11:02"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-17 12:11:02"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-17 12:11:13"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 12:19:33"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-17 12:19:33"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 12:24:10"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-17 12:24:10"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 13:52:45"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-17 13:52:45"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 16:45:49"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 16:46:16"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-17 16:46:16"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 16:52:26"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-17 16:52:26"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:11:47"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:12:49"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 17:13:02"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:13:18"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:13:47"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:14:13"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:14:52"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-17 17:14:52"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:25:09"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:30:59"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:41:23"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:41:28"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:42:19"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 17:42:26"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:42:43"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:42:56"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"marketplace-integration","timestamp":"2026-02-17 17:42:56"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:43:08"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:43:10"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 17:43:44"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:44:39"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"marketplace-integration","timestamp":"2026-02-17 17:44:39"}
+{"level":"info","message":"GET / - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:44:54"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:45:13"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"marketplace-integration","timestamp":"2026-02-17 17:45:13"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:45:58"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:46:42"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 17:46:52"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:47:05"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 17:47:33"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:47:46"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 17:48:05"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 17:48:18"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:48:30"}
+{"level":"info","message":"GET /api/auth/test - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:48:33"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:49:49"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-17 17:49:49"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 17:50:22"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 18:56:57"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 18:57:46"}
+{"level":"error","message":"Database error: \nInvalid `prisma.user.findUnique()` invocation in\nC:\\Project\\Gudang Multi Tokomain\\server\\src\\routes\\auth.js:33:36\n\n  30     console.log('LOGIN HIT', req.body);\n  31 \n  32 // 1. Cari user\n→ 33     const user = await prisma.user.findUnique(\nThe table `public.users` does not exist in the current database.","service":"marketplace-integration","target":"user.findUnique","timestamp":"2026-02-17 18:57:46"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 19:01:01"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 19:51:06"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 19:51:13"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 19:52:20"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-17 19:52:20"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 19:55:52"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:05:35"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:06:24"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:07:58"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 20:08:28"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 20:08:42"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 20:08:59"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 20:11:20"}
+{"level":"info","message":"GET /.well-known/appspecific/com.chrome.devtools.json - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:12:17"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:14:12"}
+{"level":"info","message":"GET /.well-known/appspecific/com.chrome.devtools.json - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:14:12"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:14:23"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-17 20:14:23"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:29:58"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:30:08"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 20:33:43"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 20:37:11"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 20:39:36"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:39:42"}
+{"level":"info","message":"GET /.well-known/appspecific/com.chrome.devtools.json - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:39:42"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:40:24"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 20:40:51"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:41:08"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 20:41:28"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:41:37"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-17 20:41:37"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:42:09"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:42:20"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:48:21"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-17 20:54:37"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 20:54:54"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:55:13"}
+{"level":"info","message":"GET /.well-known/appspecific/com.chrome.devtools.json - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:55:13"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:55:22"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-17 20:55:22"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 20:56:29"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 20:56:47"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 21:01:06"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-17 21:06:13"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 21:06:31"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-17 21:06:32"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 21:06:41"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 21:08:32"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 21:09:35"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-17 21:10:05"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 08:55:52"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 08:56:02"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 08:56:13"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-18 09:21:46"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 09:37:15"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 09:37:31"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-18 09:37:33"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 09:38:31"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 09:39:37"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 09:44:26"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 09:46:13"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 09:46:18"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 09:46:27"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-18 09:46:27"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 09:46:37"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-18 09:57:52"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 10:01:53"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:02:12"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:02:49"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-18 10:02:49"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:02:49"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:02:51"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:02:52"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:02:57"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:02"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:08"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:14"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:20"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:26"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:32"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:38"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:44"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:50"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:03:56"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:02"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:08"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:14"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:20"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:26"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:32"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:38"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:43"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:49"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:04:55"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:01"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:07"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:13"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:19"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:25"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:31"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:37"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:43"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:49"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:05:55"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:06:01"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:06:06"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 10:36:21"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 10:47:17"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 10:48:39"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:48:42"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 10:52:39"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 10:57:09"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:57:33"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-18 10:57:33"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:57:34"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:57:34"}
+{"level":"info","message":"GET /socket.io/ - ::1","service":"marketplace-integration","timestamp":"2026-02-18 10:57:36"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-18 11:09:37"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-19 09:54:44"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-19 09:54:44"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-19 09:54:55"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-19 09:55:17"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-19 09:55:17"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-19 09:55:22"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-19 10:08:29"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-19 10:08:29"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-19 10:10:56"}
+{"level":"info","message":"GET /favicon.ico - ::1","service":"marketplace-integration","timestamp":"2026-02-19 10:10:58"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-19 10:11:29"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-19 10:11:29"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-19 10:13:06"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-19 10:28:25"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-19 10:28:25"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-19 10:28:41"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-19 10:28:41"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-19 10:41:39"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-19 10:41:39"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-19 10:41:49"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-19 10:41:49"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-19 10:42:27"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-19 10:42:27"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-19 10:42:33"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-19 10:45:40"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-19 10:45:40"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-19 10:45:51"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-19 10:45:51"}
+{"level":"info","message":"Client connected: 8WKfXMJHRu4HAjkXAAAB","service":"marketplace-integration","timestamp":"2026-02-19 10:45:52"}
+{"level":"info","message":"User null joined room","service":"marketplace-integration","timestamp":"2026-02-19 10:45:52"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-19 18:13:00"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-19 18:13:00"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-19 18:14:15"}
+{"level":"info","message":"Database info:","service":"marketplace-integration","timestamp":"2026-02-19 18:14:15"}
+{"level":"info","message":"Client connected: qs6FxiZAcc9DDVbEAAAB","service":"marketplace-integration","timestamp":"2026-02-19 18:14:16"}
+{"level":"info","message":"User null joined room","service":"marketplace-integration","timestamp":"2026-02-19 18:14:16"}
+{"level":"info","message":"GET /api/auth/login - ::1","service":"marketplace-integration","timestamp":"2026-02-19 18:14:19"}
+{"level":"info","message":"Client disconnected: qs6FxiZAcc9DDVbEAAAB","service":"marketplace-integration","timestamp":"2026-02-19 18:14:24"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 09:32:19"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 09:32:19"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 09:37:04"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 09:37:05"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 09:38:26"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 09:38:26"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 09:41:22"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 09:41:22"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 09:50:51"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 09:50:51"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 11:33:00"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 11:33:00"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 11:36:54"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 11:36:54"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 11:37:21"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 11:37:21"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-20 11:41:33"}
+{"level":"warn","message":"Redis disabled (development mode)","service":"marketplace-integration","timestamp":"2026-02-20 14:03:12"}
+{"level":"info","message":"Server running on http://localhost:3000","service":"marketplace-integration","timestamp":"2026-02-20 14:03:12"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"marketplace-integration","timestamp":"2026-02-20 14:03:46"}
