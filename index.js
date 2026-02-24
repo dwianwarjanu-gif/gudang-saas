@@ -5,6 +5,7 @@ const rateLimit = require('express-rate-limit');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
 require('dotenv').config();
+const mysql = require('mysql2')
 
 const logger = require('./src/utils/logger');
 const { connectRedis } = require('./src/utils/redis');
