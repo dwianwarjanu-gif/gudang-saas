@@ -55,3 +55,11 @@ model Order {
 
   createdAt DateTime @default(now())
 }
+
+model Subscription {
+  id        String   @id @default(uuid())
+  tenantId  String
+  plan      String
+  status    String
+  createdAt DateTime @default(now())
+}
