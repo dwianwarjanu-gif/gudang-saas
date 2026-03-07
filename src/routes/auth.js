@@ -37,18 +37,30 @@ router.post('/login', async (req, res) => {
     
 
 // 1. Cari user
-    const user = await prisma.user.findUnique({
-      where: { email }
-    });
+  exports.login = async (req, res) => {
+  const { email, password } = req.body
 
-    console.log("USER FROM DB:", user);
+  const user = await prisma.user.findUnique({
+    where: { email }
+  })
 
-    if (!user) {
-      return res.status(401).json({
-        success: false,
-        message: 'Email tidak ditemukan'
-      });
-    }
+  if (!user) {
+    return res.status(401).json({ error: "User not found" })
+  }
+
+  const match = await bcrypt.compare(password, user.password)
+
+  if (!match) {
+    return res.status(401).json({ error: "Invalid password" })
+  }
+
+  const token = jwt.sign(
+    { userId: user.id, tenantId: user.tenantId },
+    process.env.JWT_SECRET
+  )
+
+  res.json({ token })
+}
 
     
 // 2. Cek password
