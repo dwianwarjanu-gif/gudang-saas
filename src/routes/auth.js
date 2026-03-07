@@ -4,6 +4,12 @@ const bcrypt = require('bcryptjs');
 const { prisma } = require('../utils/database');
 const { session } = require('../utils/redis'); // optional (redis)
 
+const authController = require('../controllers/authController')
+
+router.post('/register-tenant', authController.registerTenant)
+router.post('/login', authController.login)
+
+
 const router = express.Router();
 
 // Dummy user (sementara untuk test SAAS)
