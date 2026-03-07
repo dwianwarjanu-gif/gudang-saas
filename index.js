@@ -21,6 +21,8 @@ const marketplaceRoutes = require('./src/routes/marketplaces');
 const analyticsRoutes = require('./src/routes/analytics');
 const syncRoutes = require('./src/routes/sync');
 const billingRoutes = require('./src/routes/billing');
+const tenantMiddleware = require('./src/middleware/tenant');
+
 
 const app = express();
 const server = createServer(app);
@@ -93,6 +95,7 @@ app.use('/api/marketplaces', marketplaceRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/sync', syncRoutes);
 app.use('/api/billing', billingRoutes);
+app.use('/api/tenant', tenantMiddleware);
 
 // API documentation
 if (process.env.NODE_ENV !== 'production') {
