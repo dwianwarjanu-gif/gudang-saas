@@ -22,6 +22,8 @@ const analyticsRoutes = require('./src/routes/analytics');
 const syncRoutes = require('./src/routes/sync');
 const billingRoutes = require('./src/routes/billing');
 const tenantMiddleware = require('./src/middleware/tenant');
+const tenantResolver = require('./src/middleware/tenantResolver');
+const tenantDBMiddleware = require('./src/middleware/tenantDBMiddleware');
 
 
 const app = express();
@@ -96,6 +98,7 @@ app.use('/api/analytics', analyticsRoutes);
 app.use('/api/sync', syncRoutes);
 app.use('/api/billing', billingRoutes);
 app.use('/api/tenant', tenantMiddleware);
+app.use('/api', tenantResolver, tenantDBMiddleware);
 
 // API documentation
 if (process.env.NODE_ENV !== 'production') {
