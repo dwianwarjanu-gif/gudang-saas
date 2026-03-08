@@ -87,6 +87,25 @@ const upload = multer({
  *       200:
  *         description: Products retrieved successfully
  */
+router.get("/", async (req, res) => {
+
+ try {
+
+  const db = req.tenantDB;
+
+  const [rows] = await db.query("SELECT * FROM products");
+
+  res.json(rows);
+
+ } catch (error) {
+
+  console.error(error);
+
+  res.status(500).json({
+   error: "Failed to fetch products"
+  });
+ }
+
 router.get('/');
 async (req, res) => {
   try {
