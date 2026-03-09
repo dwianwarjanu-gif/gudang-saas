@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 
 const { createTenant } = require("../services/tenantService");
+const { login } = require("../controllers/authController");
+
+router.post("/login", login);
 
 router.post("/register-tenant", async (req, res) => {
 
