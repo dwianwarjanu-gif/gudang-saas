@@ -1,6 +1,7 @@
 const prisma = require('../utils/prisma')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+const { generateToken } = require("../utils/jwt");
 
 exports.registerTenant = async (req, res) => {
   const { email, password, tenantName, subdomain } = req.body
@@ -25,4 +26,5 @@ exports.registerTenant = async (req, res) => {
     message: "Tenant created",
     tenant
   })
+
 }
