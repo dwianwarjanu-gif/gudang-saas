@@ -100,6 +100,7 @@ app.use('/api/billing', billingRoutes);
 app.use('/api/tenant', tenantMiddleware);
 app.use('/api', tenantResolver, tenantDBMiddleware);
 
+
 // API documentation
 if (process.env.NODE_ENV !== 'production') {
   const swaggerJsdoc = require('swagger-jsdoc');
