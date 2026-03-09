@@ -5,6 +5,29 @@ async function tenantResolver(req, res, next) {
  try {
 
   const host = req.hostname;
+  
+//Resolver Middleware
+module.exports = function tenantResolver(req, res, next) {
+
+ const host = req.headers.host;
+
+ if (!host) {
+  return res.status(400).json({ error: "Host header missing" });
+ }
+
+ const subdomain = host.split(".")[0];
+
+ if (!subdomain) {
+  return res.status(400).json({ error: "Invalid subdomain" });
+ }
+
+ req.tenant = {
+  subdomain,
+  dbName: `tenant_${subdomain}`
+ };
+
+ next();
+};
 
   // contoh: tokobaju.trizlabhw.com
   const subdomain = host.split(".")[0];
