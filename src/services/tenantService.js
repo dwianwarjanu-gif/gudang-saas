@@ -11,6 +11,10 @@ async function createTenant(data) {
 
  // create database tenant
  await createTenantDB(dbName);
+ 
+ await runTenantMigrations(dbName);
+
+ await bootstrapTenant(dbName, data);
 
  // save tenant record
  await pool.query(
