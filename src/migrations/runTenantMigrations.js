@@ -5,7 +5,7 @@ async function runTenantMigrations(dbName) {
  const connection = await mysql.createConnection({
   host: "localhost",
   user: "saas_user",
-  password: "saas_password",
+  password: "Trizlab@2026!",
   database: dbName
  });
 
@@ -64,5 +64,6 @@ async function runTenantMigrations(dbName) {
  await connection.end();
 
 }
+
 
 module.exports = runTenantMigrations;
