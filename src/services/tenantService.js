@@ -1,5 +1,7 @@
 const pool = require("../config/database");
 const createTenantDB = require("../utils/createTenantDB");
+const runTenantMigrations = require("../migrations/runTenantMigrations");
+const bootstrapTenant = require("./tenantBootstrapService");
 
 async function createTenant(data) {
 
