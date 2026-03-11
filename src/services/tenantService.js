@@ -1,32 +1,41 @@
-const pool = require("../config/database");
-const createTenantDB = require("../utils/createTenantDB");
+const mysql = require("mysql2/promise");
+const adminDB = require("../config/adminDB");
 const runTenantMigrations = require("../migrations/runTenantMigrations");
-const bootstrapTenant = require("./tenantBootstrapService");
 
-async function createTenant(data) {
+async function createTenant({ tenantName, subdomain, email }) {
 
- const { tenantName, subdomain, email } = data;
+ console.log("START TENANT CREATION");
 
  const dbName = `tenant_${subdomain}`;
 
- // create database tenant
- await createTenantDB(dbName);
- 
- await runTenantMigrations(dbName);
+ const rootDB = await mysql.createConnection({
+  host: "localhost",
+  user: "saas_user",
+  password: "SaasPassword123!"
+ });
 
- await bootstrapTenant(dbName, data);
+ await rootDB.query(`CREATE DATABASE IF NOT EXISTS ${dbName}`);
 
- // save tenant record
- await pool.query(
-   "INSERT INTO tenants (tenant_name, subdomain, db_name, email) VALUES (?, ?, ?, ?)",
-   [tenantName, subdomain, dbName, email]
+ console.log("DATABASE CREATED:", dbName);
+
+ await adminDB.query(
+  `INSERT INTO tenants (name, subdomain, db_name)
+   VALUES (?, ?, ?)`,
+  [tenantName, subdomain, dbName]
  );
 
+ console.log("TENANT REGISTERED");
+
+ await runTenantMigrations(dbName);
+
+ console.log("TENANT MIGRATED");
+
  return {
-   tenantName,
-   subdomain,
-   dbName
+  tenantName,
+  subdomain,
+  dbName
  };
+
 }
 
 module.exports = { createTenant };
