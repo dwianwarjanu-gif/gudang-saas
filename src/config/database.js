@@ -8,6 +8,8 @@ const pool = mysql.createPool({
  database: "saas_master",
  waitForConnections: true,
  connectionLimit: 10
+ queueLimit: 0
+
 });
 
 
@@ -15,11 +17,14 @@ const pool = mysql.createPool({
 const pool = mysql.createPool({
  host: "localhost",
  user: "saas_user",
- password: "Trizlab@2026!",
+ password: "SaasPassword123!",
  database: "saas_db",
  waitForConnections: true,
  connectionLimit: 10
+ queueLimit: 0
+
 });
 
 module.exports = pool;
+
 
