@@ -3,6 +3,7 @@ const bcrypt = require("bcryptjs");
 
 async function bootstrapTenant(dbName, tenantData) {
 
+<<<<<<< HEAD
  const connection = await mysql.createConnection({
   host: "localhost",
   user: "saas_user",
@@ -13,6 +14,14 @@ async function bootstrapTenant(dbName, tenantData) {
  const passwordHash = await bcrypt.hash("admin123", 10);
 
  await connection.query(
+=======
+ const db = await getTenantDB(tenant);
+  req.db = db;
+
+ const passwordHash = await bcrypt.hash("admin123", 10);
+
+ await mysql.createPool(
+>>>>>>> 9d21037 (fix order detail + update status flow)
   "INSERT INTO users (name,email,password,role) VALUES (?,?,?,?)",
   [
    tenantData.tenantName + " Admin",
@@ -30,7 +39,11 @@ async function bootstrapTenant(dbName, tenantData) {
   ]
  );
 
+<<<<<<< HEAD
  await connection.end();
+=======
+ await createPool.end();
+>>>>>>> 9d21037 (fix order detail + update status flow)
 
  console.log("Tenant bootstrap completed");
 

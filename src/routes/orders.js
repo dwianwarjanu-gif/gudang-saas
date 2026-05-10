@@ -1,15 +1,15 @@
 const express = require('express');
+const router = express.Router();
+const getTenantDB = require("../config/tenantDB");
+const tenantDBMiddleware = require("../middleware/tenantDBMiddleware");
 const { body, validationResult } = require('express-validator');
-
-const { prisma, paginate, searchFilter, dateRangeFilter } = require('../utils/database');
 const { verifyToken, requireOwnershipOrAdmin } = require('../middleware/auth');
 const { addOrderJob, addSyncJob } = require('../jobs/queueManager');
 const logger = require('../utils/logger');
 
-const router = express.Router();
 
 // Apply authentication to all routes
-router.use(verifyToken);
+router.use(verifyToken, tenantDBMiddleware);
 
 /**
  * @swagger
@@ -57,82 +57,44 @@ router.use(verifyToken);
  *       200:
  *         description: Orders retrieved successfully
  */
-router.get('/', async (req, res) => {
+
+router.get("/", async (req, res) => {
   try {
-    const { 
-      page = 1, 
-      limit = 10, 
-      search, 
-      status, 
-      marketplaceAccountId,
-      startDate,
-      endDate 
-    } = req.query;
-    
-    const pagination = paginate(parseInt(page), parseInt(limit));
-    
-    // Build filters
-    const where = {
-      userId: req.user.id,
-      ...searchFilter(search, ['orderNumber', 'marketplaceOrderId']),
-      ...(status && { status }),
-      ...(marketplaceAccountId && { marketplaceAccountId }),
-      ...dateRangeFilter(startDate, endDate, 'orderDate')
-    };
+    const db = req.db
 
-    const [orders, total] = await Promise.all([
-      prisma.order.findMany({
-        where,
-        include: {
-          marketplaceAccount: {
-            include: {
-              marketplace: {
-                select: { name: true, code: true }
-              }
-            }
-          },
-          orderItems: {
-            include: {
-              product: {
-                select: { id: true, name: true, sku: true, images: true }
-              },
-              variant: {
-                select: { id: true, variantName: true, sku: true }
-              }
-            }
-          },
-          _count: {
-            select: { orderItems: true }
-          }
-        },
-        ...pagination,
-        orderBy: { orderDate: 'desc' }
-      }),
-      prisma.order.count({ where })
-    ]);
+    console.log("🔥 TENANT:", req.tenant)
 
-    const totalPages = Math.ceil(total / parseInt(limit));
+    const [rows] = await db.query(`
+      SELECT 
+        id,
+        orderNumber,
+        marketplaceOrderId,
+        status,
+        totalAmount,
+        shippingCost,
+        orderDate,
+        createdAt
+      FROM orders
+      ORDER BY createdAt DESC
+     `)
 
     res.json({
-      orders,
-      pagination: {
-        page: parseInt(page),
-        limit: parseInt(limit),
-        total,
-        totalPages,
-        hasNext: parseInt(page) < totalPages,
-        hasPrev: parseInt(page) > 1
-      }
-    });
+      data: {
+        orders: rows,
+        pagination: {
+          total: rows.length,
+          page: 1,
+          limit: 20,
+          totalPages: 1
+        }
+       }
+      })
 
-  } catch (error) {
-    logger.error('Get orders failed:', error);
-    res.status(500).json({
-      error: 'Internal server error',
-      message: 'Failed to get orders'
-    });
+  } catch (err) {
+    console.error("❌ ORDERS ERROR:", err)
+    res.status(500).json({ error: err.message })
   }
-});
+})
 
 /**
  * @swagger
@@ -154,73 +116,43 @@ router.get('/', async (req, res) => {
  *       404:
  *         description: Order not found
  */
-router.get('/:id', requireOwnershipOrAdmin(async (req) => {
-  const order = await prisma.order.findUnique({
-    where: { id: req.params.id },
-    select: { userId: true }
-  });
-  return order?.userId;
-}), async (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
-    const { id } = req.params;
+    const db = req.db
 
-    const order = await prisma.order.findUnique({
-      where: { id },
-      include: {
-        marketplaceAccount: {
-          include: {
-            marketplace: true
-          }
-        },
-        orderItems: {
-          include: {
-            product: {
-              select: { 
-                id: true, 
-                name: true, 
-                sku: true, 
-                images: true,
-                price: true 
-              }
-            },
-            variant: {
-              select: { 
-                id: true, 
-                variantName: true, 
-                sku: true,
-                price: true 
-              }
-            }
-          }
-        },
-        stockMovements: {
-          include: {
-            product: {
-              select: { name: true, sku: true }
-            },
-            variant: {
-              select: { variantName: true, sku: true }
-            }
-          }
-        }
-      }
-    });
+    const [rows] = await db.query(
+      `
+      SELECT
+        id,
+        orderNumber,
+        marketplaceOrderId,
+        status,
+        totalAmount,
+        shippingCost,
+        orderDate,
+        createdAt
+      FROM orders
+      WHERE id = ?
+      `,
+      [req.params.id]
+    )
 
-    if (!order) {
+    if (!rows.length) {
       return res.status(404).json({
-        error: 'Not found',
-        message: 'Order not found'
-      });
+        message: 'Order tidak ditemukan'
+      })
     }
 
-    res.json({ order });
+    res.json({
+      data: rows[0]
+    })
 
-  } catch (error) {
-    logger.error('Get order failed:', error);
+  } catch (err) {
+    console.error("DETAIL ORDER ERROR:", err)
+
     res.status(500).json({
-      error: 'Internal server error',
-      message: 'Failed to get order'
-    });
+      error: err.message
+    })
   }
 });
 
@@ -260,84 +192,26 @@ router.get('/:id', requireOwnershipOrAdmin(async (req) => {
  *       404:
  *         description: Order not found
  */
-router.patch('/:id/status', [
-  body('status')
-    .isIn(['PENDING', 'CONFIRMED', 'PROCESSING', 'SHIPPED', 'DELIVERED', 'CANCELLED', 'REFUNDED'])
-    .withMessage('Invalid order status'),
-  body('notes')
-    .optional()
-    .trim()
-    .isLength({ max: 500 })
-    .withMessage('Notes must not exceed 500 characters')
-], requireOwnershipOrAdmin(async (req) => {
-  const order = await prisma.order.findUnique({
-    where: { id: req.params.id },
-    select: { userId: true }
-  });
-  return order?.userId;
-}), async (req, res) => {
+router.patch('/:id/status', verifyToken, async (req, res) => {
   try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({
-        error: 'Validation failed',
-        details: errors.array()
-      });
+    const db = req.db
+    const { id } = req.params
+    const { status } = req.body
+
+    const [rows] = await db.query('SELECT id FROM orders WHERE id = ?', [id])
+    if (!rows.length) {
+      return res.status(404).json({ message: 'Order tidak ditemukan' })
     }
 
-    const { id } = req.params;
-    const { status, notes } = req.body;
+    await db.query('UPDATE orders SET status = ? WHERE id = ?', [status, id])
 
-    const order = await prisma.order.findUnique({
-      where: { id }
-    });
-
-    if (!order) {
-      return res.status(404).json({
-        error: 'Not found',
-        message: 'Order not found'
-      });
-    }
-
-    // Validate status transition
-    const validTransitions = {
-      'PENDING': ['CONFIRMED', 'CANCELLED'],
-      'CONFIRMED': ['PROCESSING', 'CANCELLED'],
-      'PROCESSING': ['SHIPPED', 'CANCELLED'],
-      'SHIPPED': ['DELIVERED'],
-      'DELIVERED': ['REFUNDED'],
-      'CANCELLED': [],
-      'REFUNDED': []
-    };
-
-    if (!validTransitions[order.status].includes(status)) {
-      return res.status(400).json({
-        error: 'Bad request',
-        message: `Cannot change status from ${order.status} to ${status}`
-      });
-    }
-
-    // Add status update job to queue
-    const job = await addOrderJob('update-order-status', {
-      orderId: id,
-      status,
-      notes,
-      userId: req.user.id
-    });
-
-    logger.info(`Order status update job created: ${job.id} for order ${id}`);
-
-    res.json({
-      message: 'Order status update started',
-      jobId: job.id
-    });
-
+    res.json({ message: 'Order status updated successfully' })
   } catch (error) {
-    logger.error('Update order status failed:', error);
+    console.error('Update order status failed:', error)
     res.status(500).json({
       error: 'Internal server error',
       message: 'Failed to update order status'
-    });
+    })
   }
 });
 
@@ -405,7 +279,7 @@ router.post('/sync', [
     const userAccounts = await prisma.userMarketplaceAccount.findMany({
       where: {
         id: { in: marketplaceAccountIds },
-        userId: req.user.id
+        userId: req.user.userId
       }
     });
 
@@ -420,7 +294,7 @@ router.post('/sync', [
     const jobs = [];
     for (const accountId of marketplaceAccountIds) {
       const job = await addSyncJob('sync-orders', {
-        userId: req.user.id,
+        userId: req.user.userId,
         marketplaceAccountId: accountId,
         dateRange: dateRange || {
           startDate: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString(), // Last 30 days
@@ -430,7 +304,7 @@ router.post('/sync', [
       jobs.push(job);
     }
 
-    logger.info(`Order sync jobs created: ${jobs.map(j => j.id).join(', ')} for user ${req.user.id}`);
+    logger.info(`Order sync jobs created: ${jobs.map(j => j.id).join(', ')} for user ${req.userId}`);
 
     res.json({
       message: 'Order sync started',
@@ -468,11 +342,11 @@ router.post('/sync', [
 router.get('/stats', async (req, res) => {
   try {
     const { period = 'month' } = req.query;
-    
+
     // Calculate date range based on period
     const now = new Date();
     let startDate;
-    
+
     switch (period) {
       case 'today':
         startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -491,7 +365,7 @@ router.get('/stats', async (req, res) => {
     }
 
     const where = {
-      userId: req.user.id,
+      userId: req.user.userId,
       orderDate: {
         gte: startDate,
         lte: now
@@ -505,19 +379,19 @@ router.get('/stats', async (req, res) => {
       ordersByMarketplace
     ] = await Promise.all([
       prisma.order.count({ where }),
-      
+
       prisma.order.aggregate({
         where,
         _sum: { totalAmount: true }
       }),
-      
+
       prisma.order.groupBy({
         by: ['status'],
         where,
         _count: { _all: true },
         _sum: { totalAmount: true }
       }),
-      
+
       prisma.order.groupBy({
         by: ['marketplaceAccountId'],
         where,

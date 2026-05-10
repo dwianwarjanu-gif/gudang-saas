@@ -1,16 +1,21 @@
-const express = require('express');
-const cors = require('cors');
-const helmet = require('helmet');
-const rateLimit = require('express-rate-limit');
-const { createServer } = require('http');
-const { Server } = require('socket.io');
-require('dotenv').config();
-const mysql = require('mysql2')
+const jwt = require("jsonwebtoken");
+const express = require("express");
+const cors = require("cors");
+const helmet = require("helmet");
+const rateLimit = require("express-rate-limit");
+const bcrypt = require("bcrypt");
+const mysql = require("mysql2/promise");
+const compression = require("compression");
+require("dotenv").config();
 
-const logger = require('./src/utils/logger');
-const { connectRedis } = require('./src/utils/redis');
-const { initializeQueues } = require('./src/jobs/queueManager');
+const { createServer } = require("http");
+const { Server } = require("socket.io");
+const getTenantDB = require("./src/config/tenantDB");
+const logger = require("./src/utils/logger");
+const { connectRedis } = require("./src/utils/redis");
+const { initializeQueues } = require("./src/jobs/queueManager");
 
+<<<<<<< HEAD
 // Import routes
 const authRoutes = require('./src/routes/auth');
 const userRoutes = require('./src/routes/users');
@@ -25,67 +30,135 @@ const tenantMiddleware = require('./src/middleware/tenant');
 const tenantResolver = require('./src/middleware/tenantResolver');
 const tenantDBMiddleware = require('./src/middleware/tenantDBMiddleware');
 
+=======
+const authMiddleware = require("./src/middleware/authMiddleware");
+const requireAdmin = require("./src/middleware/roleMiddleware");
+
+const tenantRoutes = require("./src/routes/tenantRoutes");
+const meRoutes = require("./src/routes/meRoutes");
+
+const requirePermission = require("./src/middleware/permissionMiddleware");
+
+
+// routes
+const authRoutes = require('./src/routes/authRoutes');
+const userRoutes = require("./src/routes/users");
+const productRoutes = require("./src/routes/products");
+const tenantDBMiddleware = require("./src/middleware/tenantDBMiddleware");
+const orderRoutes = require("./src/routes/orders");
+const inventoryRoutes = require("./src/routes/inventory");
+const marketplaceRoutes = require("./src/routes/marketplaces");
+const analyticsRoutes = require("./src/routes/analytics");
+const syncRoutes = require("./src/routes/sync");
+const billingRoutes = require("./src/routes/billing");
+const adminRoutes = require("./src/routes/adminRoutes");
+const signupRoutes = require("./src/routes/signupRoutes");
+>>>>>>> 9d21037 (fix order detail + update status flow)
 
 const app = express();
-const server = createServer(app);
-const io = new Server(server, {
-  cors: {
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
-    methods: ["GET", "POST"]
+
+// ✅ FIX CORS (WAJIB PALING ATAS)
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://tokoa.trizlabhw.com");
+  res.header("Access-Control-Allow-Credentials", "true");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, x-tenant");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS");
+
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(200);
   }
+
+  next();
+});
+
+// 🔥 INI PENTING BANGET (HANDLE PREFLIGHT)
+app.options("*", cors());
+
+
+// 🔥 TAMBAH DI SINI
+
+app.get("/api/tenant/:subdomain", async (req, res) => {
+  const { subdomain } = req.params;
+
+  console.log("CHECK TENANT:", subdomain);
+  return res.json({
+    valid: true,
+    tenant: subdomain
+  });
 });
 
 const PORT = process.env.PORT || 3000;
 
 
-// Security middleware
+/* ============================= */
+/* SERVER + SOCKET */
+/* ============================= */
+
+const server = createServer(app);
+
+const io = new Server(server, {
+  cors: {
+    origin: "*",
+  },
+});
+app.set("io", io);
+
+/* ============================= */
+/* MIDDLEWARE */
+/* ============================= */
+
+
+app.set("trust proxy", 1);
+
 app.use(helmet());
-app.use(cors({
-  origin: process.env.CLIENT_URL || "http://localhost:5173",
-  credentials: true
-}));
+app.options("*", cors());
+app.use(compression());
+app.use(express.json({ limit: "1mb" }));
+app.use(express.urlencoded({ extended: true }));
 
-// Rate limiting
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
-  message: 'Too many requests from this IP, please try again later.'
-});
-app.use('/api/', limiter);
-
-// Body parsing middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true, limit: '10mb' }));
-
-// Logging middleware
-app.use((req, res, next) => {
-  logger.info(`${req.method} ${req.path} - ${req.ip}`);
-  next();
+  windowMs: 15 * 60 * 1000,
+  max: 100,
 });
 
-// Test root
-app.get('/', (req, res) => {
-  res.send('API running...');
+app.use("/api/", limiter);
+app.use(express.static("public"));
+
+
+/* ============================= */
+/* ROOT */
+/* ============================= */
+
+app.get("/", (req, res) => {
+  res.json({ status: "SaaS API Running" });
 });
 
-// Health check endpoint
-app.get('/', (req, res) => {
-  res.json({
-    title: 'Marketplace Integration API',
-    version: '1.0',
-    status: 'running',
-  });
-});
+// ROUTE LAIN
+app.use("/api/auth", require("./src/routes/authRoutes"));
+
+app.use("/api/orders", orderRoutes);
+app.use("/api/inventory", inventoryRoutes);
+
+// PUBLIC ROUTES
+app.use("/api", signupRoutes);
+
+// PROTECTED ROUTES
+app.use("/api/me", require("./src/routes/meRoutes"));
+app.use("/api/users", userRoutes);
+app.use("/api/products", productRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api", tenantRoutes);
+app.use("/api/marketplaces", marketplaceRoutes);
+//app.use("/api/analytics", analyticsRoutes);
+//app.use("/api/sync", syncRoutes);
+app.use("/api/billing", billingRoutes);
 
 
-/* TEST API */
-app.get("/api/products", (req, res) => {
-  res.json([
-    { id: 1, name: "Produk A", price: 10000 },
-    { id: 2, name: "Produk B", price: 20000 },
-  ]);
-});
+/* ============================= */
+/* START SERVER */
+/* ============================= */
 
+<<<<<<< HEAD
 // API routes
 console.log('Auth routes loaded');
 app.use('/api/auth', authRoutes);
@@ -163,54 +236,21 @@ app.use('*', (req, res) => {
 });
 
 // Initialize services and start server
+=======
+>>>>>>> 9d21037 (fix order detail + update status flow)
 async function startServer() {
   try {
-    // Connect to Redis
-    if (process.env.REDIS_ENABLED === 'true') {
     await connectRedis();
-    logger.info('Connected to Redis');
-    
-    // Initialize job queues
     await initializeQueues();
-    logger.info('Job queues initialized');
-    } else {
-      logger.warn('Redis disabled (development mode)');
-    }
-    
-    // Start server
-  server.listen(PORT, () => {
-  logger.info(`Server running on http://localhost:${3000}`);
-  });
 
-  server.on("error", (err) => {
-  if (err.code === "EADDRINUSE") {
-    console.error(`Port ${PORT} is already in use`);
-  } else {
+    server.listen(PORT, "0.0.0.0", () => {
+      console.log(`Server running on http://0.0.0.0:${PORT}`);
+
+    });
+  } catch (err) {
     console.error(err);
-  }
- });
-    
-  } catch (error) {
-    logger.error('Failed to start server:', error);
     process.exit(1);
   }
 }
-
-// Graceful shutdown
-process.on('SIGTERM', () => {
-  logger.info('SIGTERM received, shutting down gracefully');
-  server.close(() => {
-    logger.info('Process terminated');
-    process.exit(0);
-  });
-});
-
-process.on('SIGINT', () => {
-  logger.info('SIGINT received, shutting down gracefully');
-  server.close(() => {
-    logger.info('Process terminated');
-    process.exit(0);
-  });
-});
 
 startServer();

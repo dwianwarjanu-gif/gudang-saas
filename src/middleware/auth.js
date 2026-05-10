@@ -1,96 +1,57 @@
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
-/*
-========================
-VERIFY TOKEN
-========================
-*/
 const verifyToken = (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;
 
     if (!authHeader) {
-      return res.status(401).json({ message: 'Token missing' });
+      return res.status(401).json({ message: "Token missing" });
     }
 
-    const token = req.headers.authorization?.split(' ')[1];
-    if (!token) {
-      return res.status(401).json({ message: 'Unauthorized' });
-    }
-
+    const token = authHeader.split(" ")[1];
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     
+    console.log("JWT SECRET:", process.env.JWT_SECRET);
+    console.log("🔥 DECODED:", decoded);
+
     req.user = {
-      userId: decoded.userId,
+      user_id: decoded.user_id,
+      email: decoded.email,
       role: decoded.role,
-      tenant_id: decoded.tenant_id
+      tenant: decoded.tenant
     };
 
     next();
   } catch (err) {
-    return res.status(401).json({ message: 'Invalid token' });
+    console.log("❌ VERIFY ERROR:", err.message);
+    return res.status(401).json({ message: "Invalid token" });
   }
 };
 
-/*
-========================
-TENANT ISOLATION
-========================
-*/
-const tenantMiddleware = (req, res, next) => {
-  if (!req.user || !req.user.tenant_id) {
-    return res.status(403).json({ message: 'Tenant not found' });
-  }
-
-  req.tenant_id = req.user.tenant_id;
-  next();
-};
-
-/*
-========================
-ADMIN GUARD
-========================
-*/
-const requireAdmin = (req, res, next) => {
-  if (!['ADMIN', 'SUPER_ADMIN'].includes(req.user.role)) {
-    return res.status(403).json({ message: 'Admin only' });
-  }
-  next();
-};
-
-/*
-========================
-OWNERSHIP OR ADMIN
-========================
-*/
+// 🔥 TAMBAH INI
 const requireOwnershipOrAdmin = (getOwnerId) => {
   return async (req, res, next) => {
     try {
       const ownerId = await getOwnerId(req);
 
       if (
-        req.user.role === 'SUPER_ADMIN' ||
-        req.user.role === 'ADMIN' ||
-        req.user.userId == ownerId
+        req.user.role === "ADMIN" ||
+        req.user.role === "SUPER_ADMIN" ||
+        req.user.user_id == ownerId
       ) {
         return next();
       }
 
-      return res.status(403).json({ message: 'Access denied' });
+      return res.status(403).json({ message: "Access denied" });
     } catch (err) {
-      return res.status(500).json({ message: 'Authorization error' });
+      return res.status(500).json({ message: "Authorization error" });
     }
   };
 };
 
-/*
-========================
-EXPORT (INI YANG TADI HILANG!)
-========================
-*/
+// 🔥 EXPORT SEMUA
 module.exports = {
   verifyToken,
-  tenantMiddleware,
-  requireAdmin,
   requireOwnershipOrAdmin
 };

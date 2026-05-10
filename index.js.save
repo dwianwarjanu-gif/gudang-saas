@@ -1,0 +1,242 @@
+const express = require("express");
+const cors = require("cors");
+const helmet = require("helmet");
+const rateLimit = require("express-rate-limit");
+const bcrypt = require("bcrypt");
+const mysql = require("mysql2/promise");
+const compression = require("compression");
+require("dotenv").config();
+
+const { createServer } = require("http");
+const { Server } = require("socket.io");
+
+const logger = require("./src/utils/logger");
+const { connectRedis } = require("./src/utils/redis");
+const { initializeQueues } = require("./src/jobs/queueManager");
+
+const authMiddleware = require("./src/middleware/authMiddleware");
+const tenantResolver = require("./src/middleware/tenantResolver");
+const tenantDBMiddleware = require('./src/middleware/tenantDBMiddleware');
+const requireAdmin = require("./src/middleware/roleMiddleware");
+
+const tenantRoutes = require("./src/routes/tenantRoutes");
+const meRoutes = require("./src/routes/meRoutes");
+
+const requirePermission = require("./src/middleware/permissionMiddleware");
+
+
+// routes
+const authRoutes = require("./src/routes/authRoutes");
+const userRoutes = require("./src/routes/users");
+const productRoutes = require("./src/routes/products");
+const orderRoutes = require("./src/routes/orders");
+const inventoryRoutes = require("./src/routes/inventory");
+const marketplaceRoutes = require("./src/routes/marketplaces");
+const analyticsRoutes = require("./src/routes/analytics");
+const syncRoutes = require("./src/routes/sync");
+const billingRoutes = require("./src/routes/billing");
+const adminRoutes = require("./src/routes/adminRoutes");
+const signupRoutes = require("./src/routes/signupRoutes");
+
+const app = express();
+
+app.use(cors({
+  origin: [
+    "https://tokoa.trizlabhw.com",
+    "https://api.trizlabhw.com",
+    "http://localhost:5173"
+  ],
+  credentials: true
+}));
+
+app.use(express.json());
+
+// 🔥 TAMBAH DI SINI
+
+app.get("/api/tenant/:subdomain", async (req, res) => {
+  const { subdomain } = req.params;
+
+  console.log("CHECK TENANT:", subdomain);
+
+  return res.json({
+    valid: true,
+    tenant: subdomain
+  });
+});
+
+const PORT = process.env.PORT || 3000;
+
+
+/* ============================= */
+/* SERVER + SOCKET */
+/* ============================= */
+
+const server = createServer(app);
+
+const io = new Server(server, {
+  cors: {
+    origin: "*",
+  },
+});
+app.set("io", io);
+
+/* ============================= */
+/* MIDDLEWARE */
+/* ============================= */
+
+app.set("trust proxy", 1);
+
+app.use(helmet());
+app.options("*", cors())
+app.use(compression());
+app.use(express.json({ limit: "1mb" }));
+app.use(express.urlencoded({ extended: true }));
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+});
+
+app.use("/api/", limiter);
+app.use(express.static("public"));
+
+/* ============================= */
+/* ROOT */
+/* ============================= */
+
+app.get("/", (req, res) => {
+  res.json({ status: "SaaS API Running" });
+});
+
+/* ============================= */
+/* LOGIN TENANT */
+/* ============================= */
+
+const jwt = require("jsonwebtoken");
+
+app.post("/api/login", async (req, res) => {
+  try {
+    const { email, password, tenant } = req.body;
+
+    if (!tenant) {
+      return res.status(400).json({ error: "Tenant missing" });
+    }
+
+    // 🔥 ambil tenant dari master DB
+    const masterConn = await mysql.createConnection({
+      host: "localhost",
+      user: "saas_user",
+      password: "SaasPassword123!",
+      database: "saas_master",
+    });
+
+    const [tenantRows] = await masterConn.query(
+      "SELECT * FROM tenants WHERE subdomain = ?",
+      [tenant]
+    );
+
+    if (tenantRows.length === 0) {
+      return res.status(404).json({ error: "Tenant not found" });
+    }
+
+    const tenantData = tenantRows[0];
+    const dbName = tenantData.db_name;
+
+    // 🔥 connect ke DB tenant
+    const conn = await mysql.createConnection({
+      host: "localhost",
+      user: "saas_user",
+      password: "SaasPassword123!",
+      database: dbName,
+    });
+
+    const [rows] = await conn.query(
+      "SELECT * FROM user WHERE email=?",
+      [email]
+    );
+
+    if (rows.length === 0) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    const user = rows[0];
+
+    const valid = await bcrypt.compare(password, user.password);
+
+    if (!valid) {
+      return res.status(401).json({ error: "Wrong password" });
+    }
+
+    const token = jwt.sign(
+      {
+        user_id: user.id,
+        email: user.email,
+        role: user.role,
+        role_id: user.role_id,
+        tenant: tenant
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: "24h" }
+    );
+
+    res.json({
+      message: "Login success",
+      token,
+      user: {
+        id: user.id,
+        email: user.email,
+        role_id: user.role_id
+      }
+    });
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Login error" });
+  }
+});
+
+
+/* ============================= */
+/* ROUTES */
+/* ============================= */
+
+app.use("/api/auth", authRoutes);
+app.use("/api", signupRoutes);
+
+app.use("/api", tenantResolver);
+app.use("/api", tenantDBMiddleware);
+app.use("/api", authMiddleware);
+app.use("/api", meRoutes);
+
+app.use("/api/users", userRoutes);
+app.use("/api/products", productRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api", tenantRoutes);
+app.use("/api/orders", orderRoutes);
+app.use("/api/inventory", inventoryRoutes);
+app.use("/api/marketplaces", marketplaceRoutes);
+app.use("/api/analytics", analyticsRoutes);
+app.use("/api/sync", syncRoutes);
+app.use("/api/billing", billingRoutes);
+
+
+/* ============================= */
+/* START SERVER */
+/* ============================= */
+
+async function startServer() {
+  try {
+    await connectRedis();
+    await initializeQueues();
+
+    server.listen(PORT, "0.0.0.0", () => {
+      console.log(`Server running on http://0.0.0.0:${PORT}`);
+
+    });
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+}
+
+startServer();

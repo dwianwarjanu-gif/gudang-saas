@@ -1,8 +1,13 @@
 const express = require('express');
-const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const { body, validationResult } = require('express-validator');
+const { v4: uuidv4 } = require('uuid');
+const { PrismaClient } = require('@prisma/client');
 const { prisma } = require('../utils/database');
-const { session } = require('../utils/redis'); // optional (redis)
+const { session } = require('../utils/redis');
+const { verifyToken } = require('../middleware/auth');
+const logger = require('../utils/logger');
 
 const authController = require('../controllers/authController')
 
@@ -12,30 +17,170 @@ router.post('/login', authController.login)
 
 const router = express.Router();
 
-// Dummy user (sementara untuk test SAAS)
-const users = [
-  {
-    id: 1,
-    email: 'admin@mail.com',
-    password: bcrypt.hashSync('admin123', 10),
-    fullName: 'Admin',
-    tenant_id: 1,
-    role: 'SUPER_ADMIN'
-  }
-];
 
-// TEST
-router.get('/test', (req, res) => {
-  res.json({ message: 'Auth route working' });
+/**
+ * @swagger
+ * /api/auth/register:
+ *   post:
+ *     summary: Register a new user
+ *     tags: [Authentication]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - password
+ *               - fullName
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               password:
+ *                 type: string
+ *                 minLength: 6
+ *               fullName:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: User registered successfully
+ *       400:
+ *         description: Validation error
+ *       409:
+ *         description: Email already exists
+ */
+router.post('/register', [
+  body('email')
+    .isEmail()
+    .normalizeEmail()
+    .withMessage('Valid email is required'),
+  body('password')
+    .isLength({ min: 6 })
+    .withMessage('Password must be at least 6 characters long'),
+  body('fullName')
+    .trim()
+    .isLength({ min: 2 })
+    .withMessage('Full name must be at least 2 characters long'),
+  body('phone')
+    .optional()
+    .isMobilePhone()
+    .withMessage('Valid phone number is required')
+], async (req, res) => {
+  try {
+    // Check validation errors
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({
+        error: 'Validation failed',
+        details: errors.array()
+      });
+    }
+
+    const { email, password, fullName, phone } = req.body;
+
+    // Check if user already exists
+    const existingUser = await prisma.user.findUnique({
+      where: { email }
+    });
+
+    if (existingUser) {
+      return res.status(409).json({
+        error: 'Conflict',
+        message: 'Email already registered'
+      });
+    }
+
+    // Hash password
+    const saltRounds = 12;
+    const hashedPassword = await bcrypt.hash(password, saltRounds);
+
+    // Create user
+    const user = await prisma.user.create({
+      data: {
+        email,
+        password: hashedPassword,
+        fullName,
+        phone: phone || null
+      },
+      select: {
+        id: true,
+        email: true,
+        fullName: true,
+        phone: true,
+        role: true,
+        createdAt: true
+      }
+    });
+
+    logger.info(`New user registered: ${email}`);
+
+    res.status(201).json({
+      message: 'User registered successfully',
+      user
+    });
+
+  } catch (error) {
+    logger.error('Registration failed:', error);
+    res.status(500).json({
+      error: 'Internal server error',
+      message: 'Registration failed'
+    });
+  }
 });
 
-// LOGIN
-router.post('/login', async (req, res) => {
+/**
+ * @swagger
+ * /api/auth/login:
+ *   post:
+ *     summary: Login user
+ *     tags: [Authentication]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - password
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               password:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Login successful
+ *       400:
+ *         description: Validation error
+ *       401:
+ *         description: Invalid credentials
+ */
+router.post('/login', [
+  body('email')
+    .isEmail()
+    .normalizeEmail()
+    .withMessage('Valid email is required'),
+  body('password')
+    .notEmpty()
+    .withMessage('Password is required')
+], async (req, res) => {
   try {
-    const { email, password } = req.body;
-    console.log("LOGIN REQUEST:", email, password);
-    
+    // Check validation errors
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({
+        error: 'Validation failed',
+        details: errors.array()
+      });
+    }
 
+<<<<<<< HEAD
 // 1. Cari user
   exports.login = async (req, res) => {
   const { email, password } = req.body
@@ -61,67 +206,195 @@ router.post('/login', async (req, res) => {
 
   res.json({ token })
 }
+=======
+    const { email, password } = req.body;
 
-    
-// 2. Cek password
-    const isMatch = await bcrypt.compare(password, user.password);
-    console.log("PASSWORD MATCH:", isMatch);
+    // Find user
+    const user = await prisma.user.findUnique({
+      where: { email }
+    });
 
-    if (!isMatch) {
+    if (!user) {
       return res.status(401).json({
-        success: false,
-        message: 'Password salah'
+        message: 'User tidak ditemukan'
+      });
+    }
+    const valid = await bcrypt.compare(password, user.password);
+>>>>>>> 9d21037 (fix order detail + update status flow)
+
+     if (!valid) {
+    return res.status(401).json({ message: 'Password salah' });
+  }
+
+    if (!user.isActive) {
+      return res.status(401).json({
+        error: 'Unauthorized',
+        message: 'Account is deactivated'
       });
     }
 
-    // 3. Buat session (untuk Redis - optional tapi PRO)
-    const sessionId = Date.now().toString();
+    // Verify password
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+    if (!isPasswordValid) {
+      return res.status(401).json({
+        error: 'Unauthorized',
+        message: 'Invalid email or password'
+      });
+    }
 
-    // 4. ===== JWT SAAS =====
+    // Generate session ID and JWT token
+    const sessionId = uuidv4();
     const token = jwt.sign(
       {
         userId: user.id,
-        tenant_id: user.tenant_id,
+        sessionId,
         role: user.role,
-        sessionId: sessionId
+        tenant: "tokolaptop2"
       },
       process.env.JWT_SECRET,
-      { expiresIn: '7d' }
+      { expiresIn: process.env.JWT_EXPIRES_IN || '7d' }
     );
-  
-    // 5. Simpan session ke Redis (PRODUCTION)
-      if (session) {
-      await session.set(
-        `session:${sessionId}`,
-        JSON.stringify({
-          userId: user.id,
-          tenant_id: user.tenant_id
-        }),
-        60 * 60 * 24 * 7
-      );
-    }
 
-    // 6. Response ke frontend
+    // Store session in Redis
+    const sessionData = {
+      userId: user.id,
+      email: user.email,
+      role: user.role,
+      loginTime: new Date().toISOString(),
+      lastActivity: new Date().toISOString()
+    };
+
+    await session.create(sessionId, sessionData, 7 * 24 * 60 * 60); // 7 days
+
+    // Return user data and token
+    const userData = {
+      id: user.id,
+      email: user.email,
+      fullName: user.fullName,
+      phone: user.phone,
+      role: user.role
+    };
+
+    logger.info(`User logged in: ${email}`);
+
     res.json({
-      success: true,
-      message: 'Login berhasil',
+      message: 'Login successful',
       token,
-      sessionId,
-      user: {
-        id: user.id,
-        email: user.email,
-        fullName: user.fullName,
-        role: user.role,
-        tenant_id: user.tenant_id
-      }
+      user
     });
 
   } catch (error) {
-    console.error('Login error:', error);
+    logger.error('Login failed:', error);
     res.status(500).json({
-      success: false,
-      message: 'Server error'
-  });
+      error: 'Internal server error',
+      message: 'Login failed'
+    });
+  }
+});
+
+/**
+ * @swagger
+ * /api/auth/logout:
+ *   post:
+ *     summary: Logout user
+ *     tags: [Authentication]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Logout successful
+ *       401:
+ *         description: Unauthorized
+ */
+router.post('/logout', async (req, res) => {
+    return res.json({ message: "Logout successful" });
+});
+
+
+/**
+ * @swagger
+ * /api/auth/me:
+ *   get:
+ *     summary: Get current user profile
+ *     tags: [Authentication]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: User profile retrieved successfully
+ *       401:
+ *         description: Unauthorized
+ */
+
+const authMiddleware = require("../middleware/authMiddleware");
+const tenantDBMiddleware = require("../middleware/tenantDBMiddleware");
+
+router.get(
+  "/me",
+  verifyToken,
+  tenantDBMiddleware,
+  (req, res) => {
+      res.json({ user: req.user });
+    } catch (err) {
+      console.error("ME ERROR:", err);
+      res.status(500).json({ error: "Failed get user" });
+    }
+  }
+);
+
+/**
+ * @swagger
+ * /api/auth/refresh:
+ *   post:
+ *     summary: Refresh access token
+ *     tags: [Authentication]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Token refreshed successfully
+ *       401:
+ *         description: Unauthorized
+ */
+router.post('/refresh', verifyToken, async (req, res) => {
+  try {
+    // Generate new session ID and token
+    const newSessionId = uuidv4();
+    const newToken = jwt.sign(
+      {
+        userId: req.user.id,
+        sessionId: newSessionId,
+        role: req.user.role
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: process.env.JWT_EXPIRES_IN || '7d' }
+    );
+
+    // Update session in Redis
+    const sessionData = {
+      userId: req.user.id,
+      email: req.user.email,
+      role: req.user.role,
+      loginTime: new Date().toISOString(),
+      lastActivity: new Date().toISOString()
+    };
+
+    // Destroy old session and create new one
+    await session.destroy(req.sessionId);
+    await session.create(newSessionId, sessionData, 7 * 24 * 60 * 60);
+
+    res.json({
+      message: 'Token refreshed successfully',
+      token: newToken,
+      expiresIn: process.env.JWT_EXPIRES_IN || '7d'
+    });
+
+  } catch (error) {
+    logger.error('Token refresh failed:', error);
+    res.status(500).json({
+      error: 'Internal server error',
+      message: 'Token refresh failed'
+    });
   }
 });
 

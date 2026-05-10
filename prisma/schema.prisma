@@ -4,7 +4,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -21,9 +21,13 @@ model Tenant {
   plan      String   @default("starter")
   createdAt DateTime @default(now())
 
+<<<<<<< HEAD
   users     User[]
   products  Product[]
   orders    Order[]
+=======
+  users User[]
+>>>>>>> 9d21037 (fix order detail + update status flow)
 }
 
 model User {
@@ -31,10 +35,15 @@ model User {
   email     String   @unique
   password  String
   role      String   @default("owner")
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d21037 (fix order detail + update status flow)
   tenantId  String
   tenant    Tenant   @relation(fields: [tenantId], references: [id])
 
   createdAt DateTime @default(now())
+<<<<<<< HEAD
 }
 
 model Product {
@@ -62,4 +71,6 @@ model Subscription {
   plan      String
   status    String
   createdAt DateTime @default(now())
+=======
+>>>>>>> 9d21037 (fix order detail + update status flow)
 }

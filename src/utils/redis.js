@@ -1,44 +1,33 @@
-const Redis = require('ioredis');
+const Redis = require("ioredis");
 
-let redis = null;
+let redisClient = null;
 
-// ===== INIT REDIS =====
-if (process.env.NODE_ENV === 'production') {
-  const Redis = require('ioredis');
+function connectRedis() {
 
-  session = new Redis({
-    host: '127.0.0.1',
-    port: 6379
-  });
+  if (!redisClient) {
 
-  session.on('connect', () => {
-    console.log('Redis connected');
-  });
+    redisClient = new Redis({
+      host: process.env.REDIS_HOST || "127.0.0.1",
+      port: process.env.REDIS_PORT || 6379
+    });
 
-  session.on('error', (err) => {
-    console.error('Redis error:', err);
-  });
-} else {
-  console.log('Redis disabled (development mode)');
-}
-// ===== SESSION HELPER =====
-const session = {
-  async set(key, value, ttlSeconds) {
-    if (!redis) return;
-    await redis.set(key, value, 'EX', ttlSeconds);
-  },
+    redisClient.on("connect", () => {
+      console.log("Connected to Redis");
+    });
 
-  async get(key) {
-    if (!redis) return null;
-    return await redis.get(key);
-  },
-
-  async del(key) {
-    if (!redis) return;
-    await redis.del(key);
+    redisClient.on("error", (err) => {
+      console.error("Redis error:", err);
+    });
   }
-};
+
+  return redisClient;
+}
+
+function getRedisClient() {
+  return redisClient;
+}
 
 module.exports = {
-  session
+  connectRedis,
+  getRedisClient
 };

@@ -1,4 +1,5 @@
 const express = require('express');
+const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const multer = require('multer');
 const path = require('path');
@@ -11,16 +12,13 @@ const { requireOwnershipOrAdmin } = require('../middleware/auth');
 const tenantMiddleware = require('../middleware/tenantMiddleware');
 const roleMiddleware = require('../middleware/role');
 const checkSubscription = require('../middleware/subscription');
+const authMiddleware = require("../middleware/authMiddleware");
+const requireAdmin = require("../middleware/roleMiddleware");
+const requirePermission = require("../middleware/permissionMiddleware");
 
 // Jobs & Logger
 const { addSyncJob } = require('../jobs/queueManager');
 const logger = require('../utils/logger');
-
-const router = express.Router();
-
-// Apply authentication to all routes
-
-router.use(tenantMiddleware);
 
 
 // Configure multer for file uploads
@@ -87,6 +85,7 @@ const upload = multer({
  *       200:
  *         description: Products retrieved successfully
  */
+<<<<<<< HEAD
 router.get("/", async (req, res) => {
 
  try {
@@ -120,79 +119,30 @@ async (req, res) => {
       ...(categoryId && { categoryId }),
       ...(isActive !== undefined && { isActive: isActive === 'true' })
     };
+=======
+>>>>>>> 9d21037 (fix order detail + update status flow)
 
-    const [products, total] = await Promise.all([
-      prisma.product.findMany({
-        where,
-        include: {
-          category: {
-            select: { id: true, name: true }
-          },
-          variants: {
-            select: {
-              id: true,
-              variantName: true,
-              sku: true,
-              price: true,
-              isActive: true
-            }
-          },
-          inventory: {
-            select: {
-              stockQuantity: true,
-              availableQuantity: true,
-              minStockLevel: true
-            }
-          },
-          marketplaceProducts: {
-            select: {
-              id: true,
-              marketplaceAccount: {
-                select: {
-                  marketplace: {
-                    select: { name: true, code: true }
-                  }
-                }
-              },
-              syncStatus: true,
-              lastSynced: true
-            }
-          },
-          _count: {
-            select: {
-              variants: true,
-              orderItems: true
-            }
-          }
-        },
-        ...pagination,
-        orderBy: { createdAt: 'desc' }
-      }),
-      prisma.product.count({ where })
-    ]);
 
-    const totalPages = Math.ceil(total / parseInt(limit));
+ //product
+router.get("/", authMiddleware, requirePermission("manage_products"), async (req, res) => {
 
-    res.json({
-      products,
-      pagination: {
-        page: parseInt(page),
-        limit: parseInt(limit),
-        total,
-        totalPages,
-        hasNext: parseInt(page) < totalPages,
-        hasPrev: parseInt(page) > 1
-      }
-    });
-  
-    } catch (error) {
-      logger.error('Get products error:', error);
-      res.status(500).json({
-        success: false,
-        message: 'Server error'
-      });
-    }
-  }
+ try{
+
+ const db = req.db;
+
+ const [rows] = await db.query("SELECT * FROM products");
+
+ res.json(rows);
+
+ }catch(err){
+
+ console.error(err);
+
+ res.status(500).json({
+  error:"Failed to fetch products"
+ });
+ }
+});
 
 
 /**
@@ -215,47 +165,11 @@ async (req, res) => {
  *       404:
  *         description: Product not found
  */
-router.get('/:id');
-requireOwnershipOrAdmin(async (req) => {
-  const product = await prisma.product.findUnique({
-    where: { id: req.params.id },
-    select: { userId: true }
-  });
-  return product?.userId;
-}), async (req, res) => {
+
+
+router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
-
-    const product = await prisma.product.findUnique({
-      where: { id },
-      include: {
-        category: true,
-        variants: {
-          include: {
-            inventory: true,
-            marketplaceProducts: {
-              include: {
-                marketplaceAccount: {
-                  include: {
-                    marketplace: true
-                  }
-                }
-              }
-            }
-          }
-        },
-        inventory: true,
-        marketplaceProducts: {
-          include: {
-            marketplaceAccount: {
-              include: {
-                marketplace: true
-              }
-            }
-          }
-        }
-      }
-    });
 
     if (!product) {
       return res.status(404).json({
@@ -267,13 +181,13 @@ requireOwnershipOrAdmin(async (req) => {
     res.json({ product });
 
   } catch (error) {
-    logger.error('Get product failed:', error);
+    console.error(error);
     res.status(500).json({
-      error: 'Internal server error',
-      message: 'Failed to get product'
+      error: 'Internal server error'
     });
   }
-};
+});
+
 
 /**
  * @swagger
@@ -521,56 +435,6 @@ router.post('/', [
  *       404:
  *         description: Product not found
  */
-router.post('/:id/sync', requireOwnershipOrAdmin(async (req) => {
-  const product = await prisma.product.findUnique({
-    where: { id: req.params.id },
-    select: { userId: true }
-  });
-  return product?.userId;
-}), async (req, res) => {
-  try {
-    const { id } = req.params;
-    const { marketplaceAccountIds } = req.body;
 
-    if (!marketplaceAccountIds || !Array.isArray(marketplaceAccountIds)) {
-      return res.status(400).json({
-        error: 'Bad request',
-        message: 'marketplaceAccountIds array is required'
-      });
-    }
-
-    const product = await prisma.product.findUnique({
-      where: { id }
-    });
-
-    if (!product) {
-      return res.status(404).json({
-        error: 'Not found',
-        message: 'Product not found'
-      });
-    }
-
-    // Add sync job to queue
-    const job = await addSyncJob('sync-products', {
-      userId: req.user.id,
-      productIds: [id],
-      marketplaceAccountIds
-    });
-
-    logger.info(`Product sync job created: ${job.id} for product ${id}`);
-
-    res.json({
-        success: true,
-         jobId: job.id
-      });
-
-  } catch (error) {
-      res.status(500).json({
-        success: false,
-        message: 'Server error'
-      });
-    }
-  }
-);
 
 module.exports = router;

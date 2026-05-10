@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const getTenantConnection = require("../utils/tenantDB");
 const getTenantConnection = require("../config/tenantConnection");
 
@@ -25,6 +26,31 @@ module.exports = async function tenantDBMiddleware(req, res, next) {
 
  }
 
+=======
+const getTenantDB = require("../config/tenantDB");
+
+const tenantDBMiddleware = async (req, res, next) => {
+  try {
+    const tenant = req.user?.tenant;
+
+    if (!tenant) {
+      return res.status(400).json({ error: "Tenant missing" });
+    }
+
+    req.tenant = tenant;
+    
+    console.log("?? USER:", req.user);
+    console.log("?? TENANT FROM USER:", req.user?.tenant);
+
+    const db = await getTenantDB(tenant);
+    req.db = db;
+
+    next();
+  } catch (err) {
+    console.error("TENANT ERROR:", err);
+    res.status(500).json({ error: "Tenant middleware error" });
+  }
+>>>>>>> 9d21037 (fix order detail + update status flow)
 };
 
 module.exports = tenantDBMiddleware;

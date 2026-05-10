@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const pool = require("../config/database");
 
 async function tenantResolver(req, res, next) {
@@ -62,3 +63,34 @@ module.exports = function tenantResolver(req, res, next) {
 }
 
 module.exports = tenantResolver;
+=======
+const adminDB = require("../config/database");
+const getTenantDB = require("../config/tenantDB");
+const { connectRedis } = require("../config/redis");
+
+
+module.exports = async (req, res, next) => {
+  try {
+    let tenant =
+      req.body?.tenant ||
+      req.headers["x-tenant-id"] ||
+      req.headers["x-tenant"] ||
+      req.headers["tenant"];
+
+    console.log("TENANT BEFORE AUTH:", tenant);
+
+    // kalau belum ada → skip dulu (biar authMiddleware isi dulu)
+    if (!tenant) {
+      return next();
+    }
+
+    tenant = tenant.trim();
+    req.tenant = tenant;
+
+    next();
+  } catch (err) {
+    console.error("TENANT ERROR:", err);
+    res.status(500).json({ error: "Tenant resolver error" });
+  }
+};
+>>>>>>> 9d21037 (fix order detail + update status flow)
