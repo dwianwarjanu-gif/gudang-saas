@@ -15,7 +15,6 @@ const logger = require("./src/utils/logger");
 const { connectRedis } = require("./src/utils/redis");
 const { initializeQueues } = require("./src/jobs/queueManager");
 
-<<<<<<< HEAD
 // Import routes
 const authRoutes = require('./src/routes/auth');
 const userRoutes = require('./src/routes/users');
@@ -30,7 +29,6 @@ const tenantMiddleware = require('./src/middleware/tenant');
 const tenantResolver = require('./src/middleware/tenantResolver');
 const tenantDBMiddleware = require('./src/middleware/tenantDBMiddleware');
 
-=======
 const authMiddleware = require("./src/middleware/authMiddleware");
 const requireAdmin = require("./src/middleware/roleMiddleware");
 
@@ -53,7 +51,7 @@ const syncRoutes = require("./src/routes/sync");
 const billingRoutes = require("./src/routes/billing");
 const adminRoutes = require("./src/routes/adminRoutes");
 const signupRoutes = require("./src/routes/signupRoutes");
->>>>>>> 9d21037 (fix order detail + update status flow)
+
 
 const app = express();
 
